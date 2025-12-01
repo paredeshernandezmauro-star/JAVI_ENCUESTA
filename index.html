@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Encuesta de Experiencia</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; max-width: 700px; }
+h1 { text-align: center; }
+label { font-weight: bold; margin-top: 20px; display: block; }
+textarea { width: 100%; height: 100px; }
+button { margin-top: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer; }
+</style>
+</head>
+<body>
+<h1>Encuesta de Experiencia</h1>
+<form action="https://formsubmit.co/paredeshernandezmauro@gmail.com" method="POST">
+<label>¿En qué medida te has sentido inmerso/a en la experiencia?</label>
+<select name="inmersion" required>
+<option>Nada</option>
+<option>Poco</option>
+<option>Bastante</option>
+<option>Mucho</option>
+</select>
+
+
+<label>¿El pasaje te permitió empatizar con lo que puede sentir una persona víctima?</label>
+<select name="empatia" required>
+<option>Sí</option>
+<option>Más o menos</option>
+<option>No</option>
+</select>
+
+
+<label>¿Qué parte del recorrido te impactó más?</label>
+<textarea name="impacto"></textarea>
+
+
+<label>¿Crees que tu comportamiento o actitud cambiará después de este pasaje?</label>
+<select name="cambio_actitud" required>
+<option>Sí</option>
+<option>No</option>
+<option>No estoy seguro/a — explica por qué</option>
+</select>
+<textarea name="explicacion_cambio"></textarea>
+
+
+<label>¿Fue clara la información sobre ansiedad, dismorfia corporal, adicciones, depresión y suicidio?</label>
+<select name="claridad_info" required>
+<option>Sí</option>
+<option>Más o menos</option>
+<option>No — puntos de mejora</option>
+</select>
+<textarea name="mejoras_info"></textarea>
+
+
+<label>¿Recomendarías esta experiencia a otros compañeros/as o amigos/as?</label>
+<select name="recomendacion" required>
+<option>Sí</option>
+<option>No — ¿por qué?</option>
+</select>
+<textarea name="motivo_recomendacion"></textarea>
+
+
+<label>¿Añadirías algún elemento o cambiarías algo en el recorrido?</label>
+<textarea name="sugerencias"></textarea>
+
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://tu-pagina-de-agradecimiento.com">
+
+
+<button type="submit">Enviar respuestas</button>
+</form>
+</body>
+</html>
